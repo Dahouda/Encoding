@@ -6,3 +6,15 @@ print("Data Loading....")
 data = pd.read_csv("Bank_Dataset.csv")
 print(data.head())
 print(data.shape)
+
+# Separate the numerici and categorical variables
+numeric_data = data.select_dtypes(include=[np.number])
+categorical_data = data.select_dtypes(exclude=[np.numver])
+
+print("Numeric Variable")
+print(numeric_data.head())
+print("Shape of Numeric Data :", numeric_data.shape)
+
+
+print("Categorical Variable")
+print(categorical_data.head())
