@@ -7,9 +7,9 @@ data = pd.read_csv("Bank_Dataset.csv")
 print(data.head())
 print(data.shape)
 
-# Separate the numerici and categorical variables
+# Separate the numeric and categorical variables
 numeric_data = data.select_dtypes(include=[np.number])
-categorical_data = data.select_dtypes(exclude=[np.numver])
+categorical_data = data.select_dtypes(exclude=[np.number])
 
 print("Numeric Variable")
 print(numeric_data.head())
