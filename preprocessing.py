@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 import corpus_creation
 import nltk
 import re
@@ -24,10 +23,10 @@ X_train, X_test, y_train, y_test = train_test_split(corpus_creation.corpus['cat_
 
 # Let's save the training and test sets to ensure we are using the same data for each model
 
-X_train.to_csv("./Data/X_train.csv", index=False, header=None)
-X_test.to_csv("./Data/X_test.csv", index=False, header=None)
-y_train.to_csv("./Data/y_train.csv", index=False, header=None)
-y_test.to_csv("./Data/y_test.csv", index=False, header=None)
+X_train.to_csv("./Data/X_train.csv", index=False, header=True)
+X_test.to_csv("./Data/X_test.csv", index=False, header=True)
+y_train.to_csv("./Data/y_train.csv", index=False, header=True)
+y_test.to_csv("./Data/y_test.csv", index=False, header=True)
 
 # Let's see our Tokenized Categorical Variable
 print("****Let's see our Tokenized Categorical Variable****")

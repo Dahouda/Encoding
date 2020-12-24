@@ -35,7 +35,7 @@ stored on computer, and used to find out how language is used.
 corpus = pd.read_csv("Data/cat_var.csv")
 print(corpus.head(5))
 X_cat_var = corpus.drop(['deposit'], axis=1)
-y_target = corpus.drop(corpus.iloc[:, 0:9], axis=1)
+y_target = corpus.drop(corpus.iloc[:, 0:8], axis=1)
 y_target.columns = ['deposit']
 
 X_cat_var.to_csv("./Data/cat_var2.csv", encoding='utf-8', index=False)
