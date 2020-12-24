@@ -18,3 +18,4 @@ print("Shape of Numeric Data :", numeric_data.shape)
 
 print("Categorical Variable")
 print(categorical_data.head())
+print("Shape of Numeric Data :", categorical_data.shape)
